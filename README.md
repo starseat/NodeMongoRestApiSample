@@ -10,11 +10,11 @@ Sample Rest API with MongoDB in NodeJS.
   2. `cmd` 열어서 `mongo` 입력
   3. 아래 명령어로 `user` 추가
   ~~~shell
-  > `use admin`
+  > use admin
   switched to db admin
-  > `db.createUser({ user: 'jw', pwd: 'jwpwd', roles: ['root'] })`
+  > db.createUser({ user: 'jw', pwd: 'jwpwd', roles: ['root'] })
   Successfully added user: { "user" : "jw", "roles" : [ "root" ] }
-  > `exit`
+  > exit
   bye
 
   ~~~
@@ -27,13 +27,13 @@ Sample Rest API with MongoDB in NodeJS.
 
 1. 데이터베이스 생성
 ~~~shell
-> `use nodejs`
+> use nodejs
 switched to db nodejs
 ~~~
 
 2. 데이터베이스 목록 확인
 ~~~shell
-> `show dbs`
+> show dbs
 admin   0.000GB
 config  0.000GB
 local   0.000GB
@@ -41,15 +41,15 @@ local   0.000GB
 
 3. 현재 사용 중인 데이터베이스
 ~~~shell
-> `db`
+> db
 nodejs
 ~~~
 
 4. 컬렉션 생성 (도큐먼트 넣을시 자동 생성되지만 아래처럼 직접 생성도 가능)
 ~~~shell
-> `db.createCollection('users')`
+> db.createCollection('users')
 { "ok" : 1 }
-> `db.createCollection('comments')`
+> db.createCollection('comments')
 { "ok" : 1 }
 ~~~
 
